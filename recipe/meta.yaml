@@ -30,6 +30,7 @@ requirements:
     - probeinterface
     - scipy
     - dask-core
+    - distributed
     - dask-jobqueue
     - seaborn
     - pyarrow
