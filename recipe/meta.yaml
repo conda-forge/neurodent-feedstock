@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.3.0" %}
 
 package:
   name: neurodent
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/neurodent/neurodent-{{ version }}.tar.gz
-  sha256: 6111ef763ccf6371a95d32c9567f824915f50e8ddbfafc295a09a7e128ea208f
+  sha256: a85f0b1a3bf4f96f623d6d73f6f513179cc0b936133cf4d08004cf65286d07aa
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -30,12 +30,12 @@ requirements:
     - probeinterface
     - scipy
     - dask-core
+    - distributed
     - dask-jobqueue
     - seaborn
     - pyarrow
     - statannotations
     - statsmodels
-    - django
     - openpyxl
     - appnope
     - zarr >=2.18.3
